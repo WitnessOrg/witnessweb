@@ -36,12 +36,14 @@ export default function MainLayout({
       >
         <header className="bg-white h-auto pt-2.5 pl-7.5 pr-7.5 pb-2.5">
           <nav className="h-10 flex items-center justify-between ">
-            <Link href="/"><span className="font-sans tracking-[-0.05em] text-2xl text-black font-medium">Witness</span></Link>
-            <div className="flex items-center gap-x-2.25">
-              {/*<Button className="rounded-full" size="xs">
+            <Link href="/">
+              <Image src="/witness-logo.svg" width={77} height={18} alt="Witness logo" />
+            </Link>
+            {/*<div className="flex items-center gap-x-2.25">
+              <Button className="rounded-full" size="xs">
                 <span className="font-sans tracking-[-0.03em] font-normal">Sign in</span>
-              </Button>*/}
-            </div>
+              </Button>
+            </div>*/}
           </nav>
         </header>
         <main className="bg-white">{children}</main>

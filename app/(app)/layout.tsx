@@ -37,7 +37,9 @@ export default function MainLayout({
       >
         <header className="bg-white h-auto pt-2.5 pl-7.5 pr-7.5 pb-2.5">
           <nav className="h-10 flex items-center justify-between ">
-            <Link href="/"><span className="font-sans tracking-[-0.05em] text-2xl text-black font-medium">Witness</span></Link>
+            <Link href="/">
+              <Image src="/witness-logo.svg" width={77} height={18} alt="Witness logo" />
+            </Link>
             <div className="flex items-center gap-x-2.25">
               <Link href="/sign-in" className="flex items-center justify-center rounded-full w-auto bg-black pl-2.5 pr-2.5 pt-0.5 pb-0.5">
                 <span className="font-sans tracking-[-0.05em] font-normal text-sm text-white">Sign in</span>
