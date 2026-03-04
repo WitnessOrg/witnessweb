@@ -51,7 +51,7 @@ export default function MainLayout({
             </Button>
           </div>
           <div className="flex flex-col gap-y-1">
-            <Link href="/" className="flex border rounded-sm gap-x-2.5 items-center justify-start p-1.25 bg-[#D9D9D9]">
+            <Link href="/assistant" className="flex border rounded-sm gap-x-2.5 items-center justify-start p-1.25 bg-[#D9D9D9]">
               <Blocks size={18} color="#121212" strokeWidth={1.5} />
               <span className="font-sans text-sm font-normal tracking-[-0.05em]">Assistant</span>
             </Link>
@@ -69,7 +69,7 @@ export default function MainLayout({
             </Link>
           </div>
         </aside>
-        <main className="">{children}</main>
+        <main className="flex-1">{children}</main>
       </body>
     </html>
   );
