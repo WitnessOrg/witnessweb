@@ -27,7 +27,7 @@ function HeroSection() {
         Witness is the AI built for everyone the system failed. 
         <span className="ml-1 text-[#808080]">Understand your rights, fight back, and win — without a lawyer.</span>
       </span>
-      <Button variant="default" size="sm" className="bg-[#121212] w-30 rounded-full">
+      <Button variant="default" size="sm" onClick={sendToAuth} className="bg-[#121212] w-30 rounded-full">
         <span className="font-sans tracking-[-0.03em] text-sm font-normal">Use witness</span>
         <ArrowRight />
       </Button>

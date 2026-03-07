@@ -28,6 +28,10 @@ export default function SignInPage() {
           <FieldSeparator/>
           <FieldGroup className="gap-y-5">
             <Field orientation="responsive" className="gap-y-2">
+              <FieldLabel htmlFor="name" className="font-sans tracking-[-0.05em] font-medium">Name</FieldLabel>
+              <Input id="name" type="text" placeholder="Witness name" className="placeholder:text-sm placeholder:tracking-[-0.05em] placeholder:font-sans" />
+            </Field>
+            <Field orientation="responsive" className="gap-y-2">
               <FieldLabel htmlFor="email" className="font-sans tracking-[-0.05em] font-medium">Email</FieldLabel>
               <Input id="email" type="email" placeholder="tryingwitness@gmail.com" className="placeholder:text-sm placeholder:tracking-[-0.05em] placeholder:font-sans" />
             </Field>
