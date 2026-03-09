@@ -23,7 +23,7 @@ export default function SignInPage() {
   const [password, setPassword] = useState("");
   const [loading, setLoading] = useState(false);
   
-  async function signUpUser() {
+  async function signInUser() {
     const { data, error } = await authClient.signIn.email({
       email: email, // user email address
       password: password, // user password -> min 8 characters by default
@@ -89,7 +89,7 @@ export default function SignInPage() {
               </InputGroup>
             </Field>
             <Field orientation="responsive">
-              <Button size="sm" className="rounded-full">
+              <Button size="sm" className="rounded-full"onClick={signInUser}>
                 {loading
                   ?
                   <SpinnerLoader />
