@@ -39,7 +39,7 @@ export default function MainLayout({
   return (
     <html lang="en" className={`${geistSans.variable} ${geistMono.variable} antialiased bg-white`}>
       <body
-        className="flex font-sans h-full w-full bg-white"
+        className="flex font-sans h-screen w-full bg-white overflow-hidden"
       >
         <aside className="flex flex-col justify-between w-50 pl-3 pr-3 pb-3 h-screen gap-y-1 border-r">
           <div className="">
