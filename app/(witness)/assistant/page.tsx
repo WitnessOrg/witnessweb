@@ -25,7 +25,7 @@ export default function AssistantPage() {
     
     abortControllerRef.current = new AbortController()
     
-    const response = await fetch("http://127.0.0.1:8000/api/chat", {
+    const response = await fetch(`${process.env.NEXT_PUBLIC_API_URL}/api/chat`, {
       method: "POST",
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify({
@@ -110,8 +110,8 @@ export default function AssistantPage() {
           handleStopStream={handleStop}
         />
       </div>
-      <div className={`transition-all duration-300 w-full 
-        ${hasStarted ? "opacity-0 pointer-events-none h-0 overflow-hidden" : "absolute top-2/3 px-5 opacity-100"
+      <div className={`transition-all duration-300 w-full
+        ${hasStarted ? "opacity-0 pointer-events-none h-0 overflow-hidden" : "absolute top-2/3 px-5 left-1/2 -translate-x-1/2 opacity-100"
         }`}
       >
         <RecentQueries />
