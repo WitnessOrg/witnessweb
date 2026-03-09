@@ -110,7 +110,7 @@ export default function AssistantPage() {
           handleStopStream={handleStop}
         />
       </div>
-      <div className={`transition-all duration-300 w-full
+      <div className={`transition-all duration-300 w-full border border-black
         ${hasStarted ? "opacity-0 pointer-events-none h-0 overflow-hidden" : "absolute top-2/3 px-5 left-1/2 -translate-x-1/2 opacity-100"
         }`}
       >
